@@ -1,11 +1,11 @@
 # # encoding: utf-8
 
-# Inspec test for recipe jupyterhub-chef::anaconda_ipykernel
+# Inspec test for recipe jupyterhub::anaconda_ipykernel
 
 # The Inspec reference, with examples and extensive documentation, can be
 # found at https://docs.chef.io/inspec_reference.html
 
-control 'jupyterhub-chef::anaconda_ipykernel' do
+control 'jupyterhub::anaconda_ipykernel' do
   title 'Testing anaconda kernels'
 
   describe bash('jupyter kernelspec list') do

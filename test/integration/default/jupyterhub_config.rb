@@ -1,11 +1,11 @@
 # # encoding: utf-8
 
-# Inspec test for recipe jupyterhub-chef::jupyterhub_config
+# Inspec test for recipe jupyterhub::jupyterhub_config
 
 # The Inspec reference, with examples and extensive documentation, can be
 # found at https://docs.chef.io/inspec_reference.html
 
-control 'jupyterhub-chef::jupyterhub_config' do
+control 'jupyterhub::jupyterhub_config' do
   title 'Testing jupyterhub configuration'
 
   describe file('/var/log/jupyterhub') do

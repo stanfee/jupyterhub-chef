@@ -1,12 +1,12 @@
 #
-# Cookbook Name:: jupyterhub-chef
+# Cookbook Name:: jupyterhub
 # Spec:: default
 #
 # Copyright (c) 2016 The Authors, All Rights Reserved.
 
 require 'spec_helper'
 
-describe 'jupyterhub-chef::jupyterhub_config' do
+describe 'jupyterhub::jupyterhub_config' do
   context 'When all attributes are default, on Ubuntu 16.04' do
     let(:chef_run) do
       # for a complete list of available platforms and versions see:

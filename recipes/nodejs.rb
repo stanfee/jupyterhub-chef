@@ -1,16 +1,15 @@
 #
-# Cookbook Name:: jupyterhub-chef
+# Cookbook Name:: jupyterhub
 # Recipe:: nodejs
 #
-# Copyright (c) 2016 The Authors, All Rights Reserved.
+# Copyright 2018, Sprout Social
+#
+# All rights reserved - Do Not Redistribute
 
-# install node
-bash 'install_nodejs' do
-  code <<-EOF
-    curl --silent --location https://rpm.nodesource.com/setup_#{node['nodejs']['version']} | bash -
-    yum install -y nodejs
-  EOF
-end
+package 'nodejs-legacy'
+
+include_recipe 'nodejs::install_from_package'
+include_recipe 'nodejs::npm'
 
 # install global npms
 node['nodejs']['global_npms'].each do |g_npm|
@@ -18,10 +17,3 @@ node['nodejs']['global_npms'].each do |g_npm|
     code "npm install -g #{g_npm}"
   end
 end unless node['nodejs']['global_npms'].empty?
-
-# install non-global npms
-node['nodejs']['npms'].each do |npm|
-  bash "install_#{npm}" do
-    code "npm install #{npm}"
-  end
-end unless node['nodejs']['npms'].empty?

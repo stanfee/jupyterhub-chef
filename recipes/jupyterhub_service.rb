@@ -1,8 +1,10 @@
 #
-# Cookbook Name:: jupyterhub-chef
+# Cookbook Name:: jupyterhub
 # Recipe:: jupyterhub_service
 #
-# Copyright (c) 2016 The Authors, All Rights Reserved.
+# Copyright 2018, Sprout Social
+#
+# All rights reserved - Do Not Redistribute
 
 bash 'reload_systemd' do
   code 'systemctl daemon-reload'
@@ -23,3 +25,4 @@ service 'start_jupyterhub' do
   service_name 'jupyterhub.service'
   action [:enable, :start]
 end
+

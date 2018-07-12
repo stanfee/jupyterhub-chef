@@ -1,7 +1,1853 @@
 DEPENDENCIES
-  jupyterhub-chef
+  account_stats_snapshots
+    path: ../account_stats_snapshots
+  ad_poller
+    path: ../ad_poller
+  airflow (~> 1.2.1)
+  airlock
+    path: ../airlock
+  apache2 (~> 2.0.0)
+  api
+    path: ../api
+  api-hive
+    path: ../api-hive
+  api-hv
+    path: ../api-hv
+  app
+    path: ../app
+  app_fastcgi
+    path: ../app_fastcgi
+  apt (= 6.1.4)
+  ark (>= 2.0.2)
+  aws_app_discovery
+    path: ../aws_app_discovery
+  aws_keys
+    path: ../aws_keys
+  bind
+    git: https://github.com/atomic-penguin/cookbook-bind.git
+    revision: 7c1fcafeb43a385bb49367b2aaf2f981e7238ff9
+    tag: v1.3.0
+  bootstrap
+    path: ../bootstrap
+  brand-mentions-storage
+    path: ../brand-mentions-storage
+  build-essential (~> 2.2.3)
+  bus
+    path: ../bus
+  bus-raw-scribe
+    path: ../bus-raw-scribe
+  bus_forwarder
+    path: ../bus_forwarder
+  bus_message_converter
+    path: ../bus_message_converter
+  bus_sharder
+    path: ../bus_sharder
+  cactus
+    path: ../cactus
+  calm-message-tracker
+    path: ../calm-message-tracker
+  casas
+    path: ../casas
+  cassandra-dse (~> 4.3.0)
+  chef-client (~> 4.3.3)
+  chef-sentry-handler
+    git: https://github.com/johnbellone/chef-sentry-handler.git
+    revision: 3a3103103010ed54285de9d0d76c6a1e841a954b
+    ref: 3a31031
+  chef-vault (= 1.3.0)
+  chef_handler (~> 2.0)
+  click_tracker
+    path: ../click_tracker
+  cloud_backup
+    path: ../cloud_backup
+  collectd
+    git: https://github.com/hectcastro/chef-collectd.git
+    revision: e9a4abc6a53be394353d276b24d61dae95ef4050
+    tag: v0.4.4
+  collectd_snmp_monitors
+    path: ../collectd_snmp_monitors
+  competitor
+    path: ../competitor
+  cron (~> 5.1.0)
+  crons_sprout-user
+    path: ../crons_sprout-user
+  data-ingest-log-sharder
+    path: ../data-ingest-log-sharder
+  data-integrity-service
+    path: ../data-integrity-service
+  data_ingest_adapter_service
+    path: ../data_ingest_adapter_service
+  database (~> 6.1.1)
+  deploytest
+    path: ../deploytest
+  disable_whoopsie
+    path: ../disable_whoopsie
+  dockctrl
+    path: ../dockctrl
+  docker (~> 2.17.0)
+  elasticsearch (~> 0.3.10)
+  etcd
+    path: ../etcd
+  everyday-poller
+    path: ../everyday-poller
+  exhibitor
+    git: https://github.com/SimpleFinance/chef-exhibitor.git
+    revision: daf227fb9c6c493440a505c9d153b67ae9f604b2
+    tag: 0.3.0
+  export-node (~> 1.0.1)
+  facebook-commons
+    path: ../facebook-commons
+  facebook-delete-tracking
+    path: ../facebook-delete-tracking
+  facebook-global-pages
+    path: ../facebook-global-pages
+  facebook-insights
+    path: ../facebook-insights
+  facebook-reader
+    path: ../facebook-reader
+  facebook-realtime-receiver
+    path: ../facebook-realtime-receiver
+  facebook-realtime-tailer
+    path: ../facebook-realtime-tailer
+  facebook_realtime_chat
+    path: ../facebook_realtime_chat
+  fail2ban (~> 5.0.1)
+  fb-competitor-poller
+    path: ../fb-competitor-poller
+  fb-debug-token-service
+    path: ../fb-debug-token-service
+  fb-fan-count-updater
+    path: ../fb-fan-count-updater
+  fb-fetcher-hive
+    path: ../fb-fetcher-hive
+  fb-hive
+    path: ../fb-hive
+  fb-new-page-hive
+    path: ../fb-new-page-hive
+  fb-new-user-processor
+    path: ../fb-new-user-processor
+  fb-pm-attachment-storage
+    path: ../fb-pm-attachment-storage
+  fb-pm-hive
+    path: ../fb-pm-hive
+  fb-rating-poller
+    path: ../fb-rating-poller
+  fb_ig_ad_reader
+    path: ../fb_ig_ad_reader
+  fb_messenger_pm_reader
+    path: ../fb_messenger_pm_reader
+  fb_pm_reader
+    path: ../fb_pm_reader
+  filebeat (~> 0.4.9)
+  finagle_gplus_auth_token
+    path: ../finagle_gplus_auth_token
+  first-run
+    path: ../first-run
+  fix-hostname
+    path: ../fix-hostname
+  fix-resolv
+    path: ../fix-resolv
+  fprobe
+    path: ../fprobe
+  git (~> 6.1.0)
+  google-pollers
+    path: ../google-pollers
+  google_plus_auth_service
+    path: ../google_plus_auth_service
+  gplus-readers
+    path: ../gplus-readers
+  grafana_dashboard_builder
+    path: ../grafana_dashboard_builder
+  ha_publishing
+    path: ../ha_publishing
+  hashbrown
+    path: ../hashbrown
+  hearken
+    path: ../hearken
+  hostsfile (~> 2.4.4)
+  ig-competitor-poller
+    path: ../ig-competitor-poller
+  ig_gateway
+    path: ../ig_gateway
+  ig_pipeline
+    path: ../ig_pipeline
+  ig_poll_scheduler
+    path: ../ig_poll_scheduler
+  ig_poller
+    path: ../ig_poller
+  ig_realtime
+    path: ../ig_realtime
+  ig_scheduler
+    path: ../ig_scheduler
+  ig_tag_poller
+    path: ../ig_tag_poller
+  ig_user_followers
+    path: ../ig_user_followers
+  inbox-chart
+    path: ../inbox-chart
+  inbox-gateway
+    path: ../inbox-gateway
+  inbox-hive
+    path: ../inbox-hive
+  inbox-service
+    path: ../inbox-service
+  infra
+    path: ../infra
+  insightstrack
+    path: ../insightstrack
+  instagram-attribution
+    path: ../instagram-attribution
+  install_apache
+    path: ../install_apache
+  install_python
+    path: ../install_python
+  iptables (~> 1.1.0)
+  iptables-pull
+    path: ../iptables-pull
+  java (~> 1.39)
+  jenkins (~> 5.0.0)
+  jupyterhub
     path: .
-    metadata: true
+  k8
+    path: ../k8
+  kibana
+    git: https://github.com/lusis/chef-kibana.git
+    revision: 89e6255e7a6c01238d349ca910c58f42af7628c8
+    tag: 1.3.0
+  kudzu
+    path: ../kudzu
+  ld_config
+    path: ../ld_config
+  ldap_mysql_granter
+    path: ../ldap_mysql_granter
+  li_cp_avatar_updater
+    path: ../li_cp_avatar_updater
+  li_page_updater
+    path: ../li_page_updater
+  li_reader
+    path: ../li_reader
+  line (~> 0.5.1)
+  linkedin-poller
+    path: ../linkedin-poller
+  listening-api
+    path: ../listening-api
+  listening-coordinator
+    path: ../listening-coordinator
+  listening-ingest
+    path: ../listening-ingest
+  listening-pipeline
+    path: ../listening-pipeline
+  loginhash_cleanup
+    path: ../loginhash_cleanup
+  logrotate (~> 1.5)
+  logstash
+    git: https://github.com/lusis/chef-logstash.git
+    revision: 3be2dd6a1bc054d62bb63c3207c7aa62519e2154
+    ref: 3be2dd6
+  lps_staging
+    path: ../lps_staging
+  lvm (~> 4.0.5)
+  maven (~> 2.2.0)
+  maxscale
+    path: ../maxscale
+  mcelog_monitor
+    path: ../mcelog_monitor
+  memcached (~> 4.1.0)
+  messaging-automation
+    path: ../messaging-automation
+  minitest-handler
+    git: https://github.com/btm/minitest-handler-cookbook.git
+    revision: 45de0b5757e43c22e17e77559b909ee4028ba164
+  monit
+    path: ../monit
+  motd-tail
+    path: ../motd-tail
+  mysql (~> 5.2.0)
+  mysql_orchestrator
+    path: ../mysql_orchestrator
+  mysql_orchestrator-agent
+    path: ../mysql_orchestrator-agent
+  needs-response
+    path: ../needs-response
+  new-user-processor
+    path: ../new-user-processor
+  newrelic (~> 2.26.0)
+  nexus
+    git: https://github.com/riotgames/nexus-cookbook.git
+    revision: 801787fd8edfbabd48361c51a931392fa69c9fec
+  nfs (~> 0.5.0)
+  nginx (~> 7.0.0)
+  nodejs
+    git: https://github.com/mdxp/nodejs-cookbook.git
+    revision: e05dd6737bdfd12f3356ac36f9502ab95170035a
+    tag: 1.3.0
+  nonengineering_proxy
+    path: ../nonengineering_proxy
+  noop
+    path: ../noop
+  notify-failure-monitor
+    path: ../notify-failure-monitor
+  notify-inbox
+    path: ../notify-inbox
+  notify-inbox-spike
+    path: ../notify-inbox-spike
+  notify-instagram
+    path: ../notify-instagram
+  notify-keywords-rollup
+    path: ../notify-keywords-rollup
+  notify-message-approval
+    path: ../notify-message-approval
+  notify-tasks
+    path: ../notify-tasks
+  nrpe (~> 1.1.2)
+  nscd (~> 0.11.0)
+  nsq
+    git: https://github.com/sproutsocial/chef-nsq.git
+    revision: 232ddaac510fe2f4d7a0425bcc3bd80b5f384d2a
+  nsq-auth-server
+    path: ../nsq-auth-server
+  ntp (~> 1.7.0)
+  openldap
+    path: ../openldap
+  openssl (~> 5.0.0)
+  package-track
+    path: ../package-track
+  parted
+    git: https://github.com/retr0h/cookbook-parted.git
+    revision: 1de4901444c92903f4f07cc93a981d8a2a6d9b43
+  pdf-generator
+    path: ../pdf-generator
+  percona
+    path: ../percona
+  phantomjs (~> 1.0.3)
+  php (~> 1.5.0)
+  php-fpm (~> 0.6.7)
+  pinterest_reader
+    path: ../pinterest_reader
+  platform_dash
+    path: ../platform_dash
+  pm-id-mapper-service
+    path: ../pm-id-mapper-service
+  pmacct
+    path: ../pmacct
+  poise-python (~> 1.7.0)
+  pollinator-java
+    path: ../pollinator-java
+  profile-notifications
+    path: ../profile-notifications
+  proxysql
+    path: ../proxysql
+  pub-bulk-composer
+    path: ../pub-bulk-composer
+  pub-fb-booster
+    path: ../pub-fb-booster
+  pub-metronome
+    path: ../pub-metronome
+  publishing-monitor
+    path: ../publishing-monitor
+  pyenv
+    git: https://github.com/sds/chef-pyenv.git
+    revision: 713ff11bc09542f2f34e78d6bf15219f004a5a0e
+  pypi_server
+    path: ../pypi_server
+  python (~> 1.4.6)
+  quoted-tweet
+    path: ../quoted-tweet
+  rackconnect
+    path: ../rackconnect
+  rackspace-hint
+    path: ../rackspace-hint
+  rclocal
+    path: ../rclocal
+  redisio (~> 1.7.1)
+  redshift-proxy
+    path: ../redshift-proxy
+  reporting-gateway
+    path: ../reporting-gateway
+  root-pw
+    path: ../root-pw
+  rsyslog (~> 2.0)
+  runit (~> 1.5)
+  s3_file
+    git: https://github.com/adamsb6/s3_file.git
+    revision: 5184d5db1bc3d9b6ebf441819ed7625145ad678d
+    tag: v2.8.0
+  salesforce-importer
+    path: ../salesforce-importer
+  salesforce_demo_request
+    path: ../salesforce_demo_request
+  scheduled_delivery
+    path: ../scheduled_delivery
+  scripts
+    path: ../scripts
+  sentiment-api
+    path: ../sentiment-api
+  sentry
+    path: ../sentry
+  sf_chart_data_loader
+    path: ../sf_chart_data_loader
+  shared_rax_hosts
+    path: ../shared_rax_hosts
+  small_thumbs
+    path: ../small_thumbs
+  smokeping (~> 3.1.0)
+  smoketcp
+    path: ../smoketcp
+  sorting_hat
+    path: ../sorting_hat
+  sprout_access
+    path: ../sprout_access
+  sprout_airflow
+    path: ../sprout_airflow
+  sprout_ambari
+    path: ../sprout_ambari
+  sprout_ambari_thrift
+    path: ../sprout_ambari_thrift
+  sprout_apache
+    path: ../sprout_apache
+  sprout_apt_block
+    path: ../sprout_apt_block
+  sprout_bind
+    path: ../sprout_bind
+  sprout_cassandra
+    path: ../sprout_cassandra
+  sprout_cassandra12
+    path: ../sprout_cassandra12
+  sprout_chef_handler
+    path: ../sprout_chef_handler
+  sprout_codesearcher
+    path: ../sprout_codesearcher
+  sprout_collectd
+    path: ../sprout_collectd
+  sprout_dc_migration
+    path: ../sprout_dc_migration
+  sprout_delete_local_users
+    path: ../sprout_delete_local_users
+  sprout_docker
+    path: ../sprout_docker
+  sprout_email_generator
+    path: ../sprout_email_generator
+  sprout_email_summaries
+    path: ../sprout_email_summaries
+  sprout_etchosts
+    path: ../sprout_etchosts
+  sprout_executor
+    path: ../sprout_executor
+  sprout_executor_sans_hadoop
+    path: ../sprout_executor_sans_hadoop
+  sprout_fail2ban
+    path: ../sprout_fail2ban
+  sprout_fb_ratelimit
+    path: ../sprout_fb_ratelimit
+  sprout_fb_realtime
+    path: ../sprout_fb_realtime
+  sprout_filebeat
+    path: ../sprout_filebeat
+  sprout_fluentd
+    path: ../sprout_fluentd
+  sprout_fstab
+    path: ../sprout_fstab
+  sprout_gearman
+    path: ../sprout_gearman
+  sprout_go
+    path: ../sprout_go
+  sprout_graphite
+    path: ../sprout_graphite
+  sprout_hastebin
+    path: ../sprout_hastebin
+  sprout_hbase
+    path: ../sprout_hbase
+  sprout_hdfs
+    path: ../sprout_hdfs
+  sprout_heartbeater_cron
+    path: ../sprout_heartbeater_cron
+  sprout_hostsfile
+    path: ../sprout_hostsfile
+  sprout_ideal_send_time_generator
+    path: ../sprout_ideal_send_time_generator
+  sprout_inbox_partition
+    path: ../sprout_inbox_partition
+  sprout_influxdb
+    path: ../sprout_influxdb
+  sprout_intercom_integration
+    path: ../sprout_intercom_integration
+  sprout_ixgbevf
+    path: ../sprout_ixgbevf
+  sprout_java
+    path: ../sprout_java
+  sprout_jdk_mirror
+    path: ../sprout_jdk_mirror
+  sprout_jenkins
+    path: ../sprout_jenkins
+  sprout_jmxterm
+    path: ../sprout_jmxterm
+  sprout_log
+    path: ../sprout_log
+  sprout_log4j_cleanup_compress
+    path: ../sprout_log4j_cleanup_compress
+  sprout_logstash
+    path: ../sprout_logstash
+  sprout_mailutils
+    path: ../sprout_mailutils
+  sprout_maxscale
+    path: ../sprout_maxscale
+  sprout_memcached
+    path: ../sprout_memcached
+  sprout_mysql
+    path: ../sprout_mysql
+  sprout_mysql_haproxy
+    path: ../sprout_mysql_haproxy
+  sprout_nagios
+    path: ../sprout_nagios
+  sprout_newrelic
+    path: ../sprout_newrelic
+  sprout_nexus
+    path: ../sprout_nexus
+  sprout_nexus_apt
+    path: ../sprout_nexus_apt
+  sprout_nginx_fb_ratelimit
+    path: ../sprout_nginx_fb_ratelimit
+  sprout_nodejs
+    path: ../sprout_nodejs
+  sprout_nrpe
+    path: ../sprout_nrpe
+  sprout_nsca
+    path: ../sprout_nsca
+  sprout_nsq
+    path: ../sprout_nsq
+  sprout_openldap
+    path: ../sprout_openldap
+  sprout_openvpn
+    path: ../sprout_openvpn
+  sprout_papyrus
+    path: ../sprout_papyrus
+  sprout_postfix
+    path: ../sprout_postfix
+  sprout_psacct
+    path: ../sprout_psacct
+  sprout_publisher
+    path: ../sprout_publisher
+  sprout_pyenv
+    path: ../sprout_pyenv
+  sprout_pypi_server
+    path: ../sprout_pypi_server
+  sprout_pyrax
+    path: ../sprout_pyrax
+  sprout_python
+    path: ../sprout_python
+  sprout_redis
+    path: ../sprout_redis
+  sprout_repository
+    path: ../sprout_repository
+  sprout_s3_backup
+    path: ../sprout_s3_backup
+  sprout_salesforce_integration
+    path: ../sprout_salesforce_integration
+  sprout_scheduler
+    path: ../sprout_scheduler
+  sprout_selenium
+    path: ../sprout_selenium
+  sprout_smokeping
+    path: ../sprout_smokeping
+  sprout_stage_appfcgi
+    path: ../sprout_stage_appfcgi
+  sprout_stageapi
+    path: ../sprout_stageapi
+  sprout_storage
+    path: ../sprout_storage
+  sprout_storm
+    path: ../sprout_storm
+  sprout_storm-worker
+    path: ../sprout_storm-worker
+  sprout_sudo
+    path: ../sprout_sudo
+  sprout_support_loginas
+    path: ../sprout_support_loginas
+  sprout_swap
+    path: ../sprout_swap
+  sprout_syslog
+    path: ../sprout_syslog
+  sprout_sysstat
+    path: ../sprout_sysstat
+  sprout_test
+    path: ../sprout_test
+  sprout_testdev
+    path: ../sprout_testdev
+  sprout_threatstack
+    path: ../sprout_threatstack
+  sprout_toolbox
+    path: ../sprout_toolbox
+  sprout_ulimit
+    path: ../sprout_ulimit
+  sprout_users
+    path: ../sprout_users
+  sprout_users_old
+    path: ../sprout_users_old
+  sprout_vault
+    path: ../sprout_vault
+  sprout_whoisonsupportthisweek
+    path: ../sprout_whoisonsupportthisweek
+  sprout_yum
+    path: ../sprout_yum
+  sprout_zookeeper
+    path: ../sprout_zookeeper
+  sproutqueue
+    path: ../sproutqueue
+  sproutsocial
+    path: ../sproutsocial
+  sproutsocial-com-site
+    path: ../sproutsocial-com-site
+  ssh_known_hosts (~> 2.0.0)
+  sshd-config
+    path: ../sshd-config
+  stage-web
+    path: ../stage-web
+  statsd
+    git: https://github.com/hectcastro/chef-statsd.git
+    revision: 385dd15e38fdd29517a8277a91b5f782c55b51d8
+  storage_commons_database_config
+    path: ../storage_commons_database_config
+  stork
+    path: ../stork
+  storm
+    path: ../storm
+  sudo (~> 2.6.0)
+  suggested_reply
+    path: ../suggested_reply
+  suggestions-synchronizer
+    path: ../suggestions-synchronizer
+  support-webhooks
+    path: ../support-webhooks
+  support_salvo
+    path: ../support_salvo
+  swagger
+    path: ../swagger
+  swap (~> 0.3.0)
+  syndicated_feed_poster
+    path: ../syndicated_feed_poster
+  sysctl (~> 1.0.2)
+  systemd (~> 2.1.3)
+  syzr
+    path: ../syzr
+  tagger
+    path: ../tagger
+  td-agent (~> 2.3.0)
+  threatstack (~> 1.7.0)
+  thyme-machine
+    path: ../thyme-machine
+  timezone-ii (~> 0.2.0)
+  tokenservice
+    path: ../tokenservice
+  trendstagger
+    path: ../trendstagger
+  tweet_stat
+    path: ../tweet_stat
+  twitter-comparison-reports
+    path: ../twitter-comparison-reports
+  twitter-delete-tracker
+    path: ../twitter-delete-tracker
+  twitter-demographics
+    path: ../twitter-demographics
+  twitter-events
+    path: ../twitter-events
+  twitter-feedback-poller
+    path: ../twitter-feedback-poller
+  twitter-follower-service
+    path: ../twitter-follower-service
+  twitter-message-processor
+    path: ../twitter-message-processor
+  twitter-platform
+    path: ../twitter-platform
+  twitter_engagement
+    path: ../twitter_engagement
+  twitter_realtime_chat
+    path: ../twitter_realtime_chat
+  twitter_tailer
+    path: ../twitter_tailer
+  ulimit
+    git: https://github.com/bmhatfield/chef-ulimit.git
+    revision: bdbe6e2cfd8faed845a96f162e1f7aaec9ba1923
+    tag: v0.3.3
+  user-timings
+    path: ../user-timings
+  users (~> 5.3.0)
+  vim
+    path: ../vim
+  vpnusers
+    path: ../vpnusers
+  websocket_bridge
+    path: ../websocket_bridge
+  yum (~> 5.1.0)
+  yum-ius (~> 3.0.0)
+  zeromq (~> 1.1.0)
+  zookeeper
+    path: ../zookeeper
 
 GRAPH
-  jupyterhub-chef (2.1.0)
+  account_stats_snapshots (0.0.7)
+    sprout_cassandra (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+  ad_poller (0.1.20)
+    bus (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+    storage_commons_database_config (>= 0.0.0)
+  airflow (1.2.1)
+    apt (>= 0.0.0)
+    poise-python (>= 0.0.0)
+  airlock (0.2.7)
+    nginx (>= 0.0.0)
+    sprout_filebeat (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+    storage_commons_database_config (>= 0.0.0)
+  ant (1.0.4)
+    ark (>= 0.0.0)
+  apache2 (2.0.0)
+    iptables (>= 0.0.0)
+    logrotate (>= 0.0.0)
+    pacman (>= 0.0.0)
+  api (0.4.38)
+    apache2 (>= 0.0.0)
+    aws_keys (>= 0.0.0)
+    build-essential (>= 0.0.0)
+    git (>= 0.0.0)
+    install_apache (>= 0.0.0)
+    logrotate (>= 0.0.0)
+    mysql (>= 0.0.0)
+    parted (>= 0.0.0)
+    sprout_collectd (>= 0.0.0)
+    sprout_fail2ban (>= 0.0.0)
+    sprout_filebeat (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+    sprout_log (>= 0.0.0)
+    sprout_python (>= 0.0.0)
+    sprout_repository (>= 0.0.0)
+    sprout_toolbox (>= 0.0.0)
+    sprout_users (>= 0.0.0)
+    sprout_yum (>= 0.0.0)
+    ssh_known_hosts (>= 0.0.0)
+    sudo (>= 0.0.0)
+    ulimit (>= 0.0.0)
+  api-hive (0.2.18)
+    api (>= 0.0.0)
+    sprout_log (>= 0.0.0)
+    sprout_python (>= 0.0.0)
+  api-hv (0.1.38)
+    api (>= 0.0.0)
+    aws_keys (>= 0.0.0)
+    newrelic (>= 0.0.0)
+    nginx (>= 0.0.0)
+    sprout_filebeat (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+    storage_commons_database_config (>= 0.0.0)
+  app (0.1.33)
+    apache2 (>= 0.0.0)
+    aws_keys (>= 0.0.0)
+    sprout_fail2ban (>= 0.0.0)
+    sprout_newrelic (>= 0.0.0)
+    ssh_known_hosts (>= 0.0.0)
+  app_fastcgi (0.10.17)
+    apache2 (>= 0.0.0)
+    aws_keys (>= 0.0.0)
+    sprout_apache (>= 0.0.0)
+    sprout_collectd (>= 0.0.0)
+    sprout_fail2ban (>= 0.0.0)
+    sprout_filebeat (>= 0.0.0)
+    sprout_newrelic (>= 0.0.0)
+    ssh_known_hosts (>= 0.0.0)
+  apt (6.1.4)
+  ark (3.1.0)
+    build-essential (>= 0.0.0)
+    seven_zip (>= 0.0.0)
+    windows (>= 0.0.0)
+  artifact (1.12.2)
+    windows (>= 0.0.0)
+  aws_app_discovery (0.1.1)
+    aws_keys (>= 0.0.0)
+  aws_keys (0.1.5)
+  beaver (1.7.0)
+    apt (>= 0.0.0)
+    poise-python (>= 0.0.0)
+  bind (1.3.0)
+  bootstrap (0.1.5)
+    chef-client (>= 0.0.0)
+    fix-hostname (>= 0.0.0)
+    fix-resolv (>= 0.0.0)
+  brand-mentions-storage (0.0.4)
+    bus (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+  build-essential (2.2.4)
+  bus (0.5.3)
+    duplicity_ng (>= 0.0.0)
+    logrotate (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+  bus-raw-scribe (0.1.0)
+    sprout_java (>= 0.0.0)
+  bus_forwarder (0.1.50)
+    bus (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+  bus_message_converter (0.1.5)
+    bus (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+  bus_sharder (0.1.9)
+    bus (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+  cactus (0.2.2)
+    apache2 (>= 0.0.0)
+    aws_keys (>= 0.0.0)
+    sprout_python (>= 0.0.0)
+  calm-message-tracker (0.2.5)
+    bus (>= 0.0.0)
+    sprout_cassandra (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+    storage_commons_database_config (>= 0.0.0)
+  casas (0.2.3)
+    newrelic (>= 0.0.0)
+    sprout_cassandra (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+    sprout_newrelic (>= 0.0.0)
+  cassandra-dse (4.3.0)
+    apt (>= 0.0.0)
+    ark (>= 0.0.0)
+    java (>= 0.0.0)
+    systemd (>= 0.0.0)
+    ulimit (>= 0.0.0)
+    yum (>= 0.0.0)
+  chef-client (4.3.3)
+    cron (>= 1.2.0)
+    logrotate (>= 1.2.0)
+    windows (>= 1.39.0)
+  chef-sentry-handler (2.2.0)
+    chef_handler (~> 2.0)
+  chef-vault (1.3.0)
+  chef_handler (2.1.2)
+  chocolatey (2.0.1)
+  click_tracker (0.1.6)
+    bus (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+    storage_commons_database_config (>= 0.0.0)
+  cloud_backup (1.1.2)
+    sprout_nsca (>= 0.0.0)
+    sprout_s3_backup (>= 0.0.0)
+  collectd (0.4.4)
+    build-essential (>= 0.0.0)
+    yum-epel (>= 0.0.0)
+  collectd_snmp_monitors (0.1.6)
+    sprout_collectd (>= 0.0.0)
+  compat_resource (12.19.1)
+  competitor (0.1.3)
+    apache2 (>= 0.0.0)
+  cron (5.1.0)
+  crons_sprout-user (0.1.8)
+    aws_keys (>= 0.0.0)
+    logrotate (>= 0.0.0)
+    php (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+    sprout_log4j_cleanup_compress (>= 0.0.0)
+  curl (2.0.4)
+  data-ingest-log-sharder (0.2.0)
+    bus (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+  data-integrity-service (0.1.1)
+    sprout_java (>= 0.0.0)
+  data_ingest_adapter_service (0.1.8)
+    bus (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+    storage_commons_database_config (>= 0.0.0)
+  database (6.1.1)
+    postgresql (>= 1.0.0)
+  delayed_evaluator (0.2.0)
+  deploytest (0.1.2)
+    sprout_java (>= 0.0.0)
+  disable_whoopsie (0.1.1)
+  dmg (4.1.1)
+  dockctrl (0.1.1)
+    aws_keys (>= 0.0.0)
+    sprout_repository (>= 0.0.0)
+  docker (2.17.0)
+  dpkg_autostart (0.2.0)
+  duplicity_ng (2.1.0)
+    build-essential (>= 0.0.0)
+    poise-python (>= 0.0.0)
+    zabbix_ng (>= 0.0.0)
+  duply (0.2.2)
+  elasticsearch (0.3.14)
+    ark (>= 0.2.4)
+  etcd (1.1.1)
+  everyday-poller (1.0.17)
+    bus (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+    storage_commons_database_config (>= 0.0.0)
+  exhibitor (0.3.0)
+    build-essential (>= 0.0.0)
+    java (>= 0.0.0)
+    runit (>= 0.0.0)
+    zookeeper (>= 2.0.0)
+  export-node (1.0.1)
+  facebook-commons (0.1.7)
+  facebook-delete-tracking (0.1.6)
+    bus (>= 0.0.0)
+    sprout_cassandra (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+    storage_commons_database_config (>= 0.0.0)
+  facebook-global-pages (0.1.1)
+    sprout_java (>= 0.0.0)
+  facebook-insights (1.1.8)
+    sprout_python (>= 0.0.0)
+  facebook-reader (0.2.2)
+    bus (>= 0.0.0)
+    sprout_cassandra (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+  facebook-realtime-receiver (1.1.10)
+    bus (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+  facebook-realtime-tailer (1.0.7)
+    facebook-realtime-receiver (>= 0.0.0)
+    storage_commons_database_config (>= 0.0.0)
+  facebook_realtime_chat (0.0.2)
+    bus (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+  fail2ban (5.0.1)
+    yum-epel (>= 0.0.0)
+  fb-competitor-poller (0.0.13)
+    bus (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+    storage_commons_database_config (>= 0.0.0)
+  fb-debug-token-service (0.2.2)
+    bus (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+  fb-fan-count-updater (1.0.5)
+    sprout_java (>= 0.0.0)
+  fb-fetcher-hive (2.0.4)
+    bus (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+    storage_commons_database_config (>= 0.0.0)
+  fb-hive (2.0.7)
+    bus (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+    storage_commons_database_config (>= 0.0.0)
+  fb-new-page-hive (2.1.4)
+    bus (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+    storage_commons_database_config (>= 0.0.0)
+  fb-new-user-processor (0.1.1)
+    bus (>= 0.0.0)
+    java (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+    storage_commons_database_config (>= 0.0.0)
+  fb-pm-attachment-storage (0.0.3)
+    aws_keys (>= 0.0.0)
+    bus (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+    storage_commons_database_config (>= 0.0.0)
+  fb-pm-hive (2.0.8)
+    bus (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+    storage_commons_database_config (>= 0.0.0)
+  fb-rating-poller (0.1.6)
+    bus (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+    storage_commons_database_config (>= 0.0.0)
+  fb_ig_ad_reader (0.1.2)
+    bus (>= 0.0.0)
+    sprout_cassandra (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+  fb_messenger_pm_reader (1.0.1)
+    bus (>= 0.0.0)
+    sprout_cassandra (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+  fb_pm_reader (1.0.1)
+    bus (>= 0.0.0)
+    sprout_cassandra (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+  filebeat (0.4.9)
+    apt (>= 0.0.0)
+    runit (>= 0.0.0)
+    windows (>= 0.0.0)
+    yum (>= 0.0.0)
+    yum-plugin-versionlock (>= 0.1.2)
+  finagle_gplus_auth_token (0.1.0)
+    s3_file (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+  first-run (0.1.9)
+    sprout_openldap (>= 0.0.0)
+  fix-hostname (0.0.2)
+  fix-resolv (0.3.4)
+  fprobe (1.4.0)
+  git (6.1.0)
+    build-essential (>= 0.0.0)
+    dmg (>= 0.0.0)
+    yum-epel (>= 0.0.0)
+  google-pollers (0.1.18)
+    bus (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+    storage_commons_database_config (>= 0.0.0)
+  google_plus_auth_service (0.1.5)
+    bus (>= 0.0.0)
+    sprout_filebeat (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+    storage_commons_database_config (>= 0.0.0)
+  gplus-readers (0.1.5)
+    bus (>= 0.0.0)
+    sprout_cassandra (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+    storage_commons_database_config (>= 0.0.0)
+  grafana_dashboard_builder (0.1.4)
+    sprout_python (>= 0.0.0)
+  ha_publishing (0.1.0)
+  hashbrown (1.1.8)
+    nginx (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+    storage_commons_database_config (>= 0.0.0)
+  hearken (0.3.4)
+    aws_keys (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+  homebrew (5.0.4)
+  hostsfile (2.4.6)
+  ig-competitor-poller (0.0.9)
+    bus (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+  ig_gateway (0.2.0)
+    bus (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+    storage_commons_database_config (>= 0.0.0)
+  ig_pipeline (0.1.2)
+    sprout_java (>= 0.0.0)
+  ig_poll_scheduler (0.1.6)
+    sprout_python (>= 0.0.0)
+  ig_poller (0.1.12)
+    sprout_python (>= 0.0.0)
+  ig_realtime (0.1.7)
+    sprout_python (>= 0.0.0)
+  ig_scheduler (0.0.4)
+    bus (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+  ig_tag_poller (0.1.11)
+    sprout_python (>= 0.0.0)
+  ig_user_followers (0.1.2)
+    sprout_python (>= 0.0.0)
+  iis (7.0.0)
+    windows (>= 4.1.0)
+  inbox-chart (0.1.1)
+    sprout_java (>= 0.0.0)
+  inbox-gateway (0.2.39)
+    sprout_java (>= 0.0.0)
+    storage_commons_database_config (>= 0.0.0)
+  inbox-hive (0.2.6)
+    aws_keys (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+    storage_commons_database_config (>= 0.0.0)
+  inbox-service (0.1.65)
+    apache2 (>= 0.0.0)
+    bus (>= 0.0.0)
+    sprout_apache (>= 0.0.0)
+    sprout_collectd (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+    sprout_python (>= 0.0.0)
+    storage_commons_database_config (>= 0.0.0)
+  infra (0.0.1)
+    nginx (>= 0.0.0)
+  insightstrack (0.1.2)
+    bus (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+    storage_commons_database_config (>= 0.0.0)
+  instagram-attribution (0.1.13)
+    bus (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+    sprout_nexus_apt (>= 0.0.0)
+    storage_commons_database_config (>= 0.0.0)
+  install_apache (0.1.3)
+    apache2 (>= 0.0.0)
+    ulimit (>= 0.0.0)
+  install_python (0.1.3)
+    ld_config (>= 0.0.0)
+    python (>= 0.0.0)
+  iptables (1.1.0)
+  iptables-pull (0.2.70)
+    sprout_nsca (>= 0.0.0)
+  java (1.50.0)
+    apt (>= 0.0.0)
+    homebrew (>= 0.0.0)
+    windows (>= 0.0.0)
+  jenkins (5.0.6)
+    compat_resource (>= 12.16.3)
+    dpkg_autostart (>= 0.0.0)
+    runit (>= 1.7)
+  jupyterhub (0.1.0)
+    nodejs (>= 0.0.0)
+  k8 (0.0.21)
+    aws_keys (>= 0.0.0)
+  kibana (1.3.0)
+    apache2 (>= 0.0.0)
+    ark (>= 0.0.0)
+    git (>= 0.0.0)
+    libarchive (>= 0.0.0)
+    nginx (>= 0.0.0)
+  kudzu (0.2.9)
+    apache2 (>= 0.0.0)
+    logrotate (>= 0.0.0)
+    sprout_filebeat (>= 0.0.0)
+    sprout_python (>= 0.0.0)
+  ld_config (0.1.0)
+  ldap_mysql_granter (0.5.6)
+    sprout_python (>= 0.0.0)
+  li_cp_avatar_updater (1.2.5)
+  li_page_updater (2.0.1)
+  li_reader (0.1.3)
+    bus (>= 0.0.0)
+    sprout_cassandra (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+  libarchive (2.0.0)
+  line (0.5.1)
+  linkedin-poller (0.1.7)
+    sprout_filebeat (>= 0.0.0)
+    sprout_python (>= 0.0.0)
+  listening-api (0.7.10)
+    bus (>= 0.0.0)
+    sprout_filebeat (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+  listening-coordinator (0.1.0)
+    bus (>= 0.0.0)
+    sprout_filebeat (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+  listening-ingest (0.1.10)
+    bus (>= 0.0.0)
+    sprout_filebeat (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+  listening-pipeline (0.1.11)
+    bus (>= 0.0.0)
+    sprout_filebeat (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+  loginhash_cleanup (1.0.3)
+    sprout_python (>= 0.0.0)
+  logrotate (1.9.2)
+  logstash (0.12.1)
+    ant (>= 0.0.0)
+    ark (>= 0.0.0)
+    beaver (>= 0.0.0)
+    build-essential (>= 0.0.0)
+    curl (>= 0.0.0)
+    git (>= 0.0.0)
+    logrotate (>= 0.0.0)
+    poise-python (>= 0.0.0)
+    runit (>= 0.0.0)
+  lps_staging (0.2.0)
+    logrotate (>= 0.0.0)
+  lvm (4.0.6)
+  magic (1.5.0)
+  maven (2.2.0)
+    ark (>= 1.0)
+    java (>= 1.38)
+    windows (>= 1.39.1)
+  maxscale (0.1.3)
+  mcelog_monitor (0.1.1)
+  memcached (4.1.0)
+    runit (>= 1.2.0)
+    yum-epel (>= 0.0.0)
+  messaging-automation (1.3.1)
+    aws_keys (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+    sprout_redis (>= 0.0.0)
+    storage_commons_database_config (>= 0.0.0)
+    twitter-events (>= 0.0.0)
+  minitest-handler (1.5.1)
+    chef_handler (>= 0.0.0)
+  monit (0.7.8)
+  motd-tail (1.1.7)
+  mysql (5.2.12)
+  mysql_orchestrator (0.9.7)
+    apache2 (>= 0.0.0)
+    database (>= 0.0.0)
+    logrotate (>= 0.0.0)
+    monit (>= 0.0.0)
+    sprout_mysql (>= 0.0.0)
+    sprout_repository (>= 0.0.0)
+  mysql_orchestrator-agent (0.1.8)
+    sprout_repository (>= 0.0.0)
+  needs-response (0.2.1)
+    sprout_java (>= 0.0.0)
+    storage_commons_database_config (>= 0.0.0)
+  new-user-processor (0.1.8)
+    sprout_cassandra (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+  newrelic (2.26.0)
+    apt (>= 0.0.0)
+    curl (>= 0.0.0)
+    python (>= 0.0.0)
+    yum (>= 0.0.0)
+  nexus (3.3.1)
+    artifact (>= 1.11.0)
+    java (>= 1.15.4)
+    nginx (>= 1.8.0)
+  nfs (0.5.0)
+    line (>= 0.0.0)
+  nginx (7.0.2)
+    build-essential (>= 0.0.0)
+    compat_resource (>= 12.16.3)
+    ohai (>= 4.1.0)
+    yum-epel (>= 0.0.0)
+    zypper (>= 0.0.0)
+  nodejs (1.3.0)
+    apt (>= 0.0.0)
+    build-essential (>= 0.0.0)
+    yum (>= 0.0.0)
+  nonengineering_proxy (0.1.17)
+    apache2 (>= 0.0.0)
+  noop (0.1.0)
+    percona (>= 0.0.0)
+  notify-failure-monitor (0.2.10)
+    aws_keys (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+  notify-inbox (0.0.4)
+    aws_keys (>= 0.0.0)
+    sprout_filebeat (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+    sprout_redis (>= 0.0.0)
+    storage_commons_database_config (>= 0.0.0)
+  notify-inbox-spike (0.0.1)
+    aws_keys (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+    storage_commons_database_config (>= 0.0.0)
+  notify-instagram (0.3.6)
+    aws_keys (>= 0.0.0)
+    bus (>= 0.0.0)
+    sprout_filebeat (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+    storage_commons_database_config (>= 0.0.0)
+  notify-keywords-rollup (0.0.5)
+    aws_keys (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+    storage_commons_database_config (>= 0.0.0)
+  notify-message-approval (0.1.3)
+    aws_keys (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+    storage_commons_database_config (>= 0.0.0)
+  notify-tasks (0.1.4)
+    aws_keys (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+    storage_commons_database_config (>= 0.0.0)
+  nrpe (1.1.2)
+    build-essential (>= 0.0.0)
+    yum-epel (>= 0.0.0)
+  nscd (0.11.0)
+  nsq (1.2.11)
+    ark (>= 0.1.0)
+    users (>= 0.1.5)
+  nsq-auth-server (0.1.2)
+    sprout_filebeat (>= 0.0.0)
+    sprout_python (>= 0.0.0)
+  ntp (1.7.0)
+  ohai (5.2.3)
+  openldap (1.12.16)
+    nscd (>= 0.0.0)
+    openssh (>= 0.0.0)
+    openssl (>= 0.0.0)
+  openssh (2.6.3)
+    iptables (>= 1.0)
+  openssl (5.0.1)
+  package-track (0.3.1)
+    apache2 (>= 0.0.0)
+    aws_keys (>= 0.0.0)
+    logrotate (>= 0.0.0)
+    sprout_python (>= 0.0.0)
+  packagecloud (1.0.0)
+  pacman (1.1.1)
+  parted (2.1.4)
+  partial_search (1.0.9)
+  pdf-generator (0.4.4)
+    aws_keys (>= 0.0.0)
+    s3_file (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+  percona (0.17.7)
+    apt (> 6.0.0)
+    build-essential (>= 0.0.0)
+    chef-vault (>= 0.0.0)
+    openssl (>= 0.0.0)
+    yum-epel (>= 0.0.0)
+  perl (6.0.1)
+    windows (>= 3.0)
+  phantomjs (1.0.3)
+    build-essential (>= 0.0.0)
+    chocolatey (>= 0.0.0)
+  php (1.5.0)
+    build-essential (>= 0.0.0)
+    iis (>= 0.0.0)
+    mysql (>= 0.0.0)
+    windows (>= 0.0.0)
+    xml (>= 0.0.0)
+    yum-epel (>= 0.0.0)
+  php-fpm (0.6.10)
+    apt (>= 0.0.0)
+    yum (>= 3.0.0)
+  pinterest_reader (0.1.0)
+    bus (>= 0.0.0)
+    sprout_cassandra (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+  platform_dash (0.1.2)
+    apache2 (>= 0.0.0)
+    sprout_apache (>= 0.0.0)
+    sprout_pyrax (>= 0.0.0)
+  pm-id-mapper-service (0.0.3)
+    bus (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+    storage_commons_database_config (>= 0.0.0)
+  pmacct (0.14.4)
+  poise (2.8.1)
+  poise-archive (1.5.0)
+    poise (~> 2.6)
+  poise-languages (2.1.2)
+    poise (~> 2.5)
+    poise-archive (~> 1.0)
+  poise-python (1.7.0)
+    poise (~> 2.7)
+    poise-languages (~> 2.0)
+  pollinator-java (0.1.3)
+    aws_keys (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+  postgresql (7.1.0)
+    build-essential (>= 2.0.0)
+    openssl (>= 4.0)
+  profile-notifications (0.1.0)
+    bus (>= 0.0.0)
+    sprout_filebeat (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+    storage_commons_database_config (>= 0.0.0)
+  proxysql (0.0.1)
+  pub-bulk-composer (0.1.2)
+    bus (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+    storage_commons_database_config (>= 0.0.0)
+  pub-fb-booster (0.1.0)
+    bus (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+    storage_commons_database_config (>= 0.0.0)
+  pub-metronome (0.1.7)
+    bus (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+    storage_commons_database_config (>= 0.0.0)
+  publishing-monitor (0.0.4)
+    sprout_java (>= 0.0.0)
+    sprout_nexus_apt (>= 0.0.0)
+    storage_commons_database_config (>= 0.0.0)
+  pyenv (1.0.0)
+  pypi_server (1.0.1)
+  python (1.4.6)
+    build-essential (>= 0.0.0)
+    yum-epel (>= 0.0.0)
+  quoted-tweet (0.1.4)
+    bus (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+  rackconnect (0.1.5)
+    fix-resolv (>= 0.0.0)
+  rackspace-hint (0.1.1)
+  rclocal (0.1.0)
+  redisio (1.7.1)
+    ulimit (>= 0.1.2)
+  redshift-proxy (1.0.0)
+  reporting-gateway (0.0.2)
+    sprout_java (>= 0.0.0)
+  root-pw (0.1.2)
+  rsyslog (2.2.0)
+  runit (1.8.0)
+    packagecloud (>= 0.0.0)
+    yum-epel (>= 0.0.0)
+  s3_file (2.8.0)
+  salesforce-importer (0.0.7)
+    sprout_java (>= 0.0.0)
+    storage_commons_database_config (>= 0.0.0)
+  salesforce_demo_request (1.0.7)
+    sprout_python (>= 0.0.0)
+  scheduled_delivery (0.0.3)
+    sprout_java (>= 0.0.0)
+    storage_commons_database_config (>= 0.0.0)
+  scripts (0.1.1)
+  sentiment-api (0.1.6)
+    aws_keys (>= 0.0.0)
+    nginx (>= 0.0.0)
+    sprout_python (>= 0.0.0)
+  sentry (0.1.7)
+    logrotate (>= 0.0.0)
+    nginx (>= 0.0.0)
+    sprout_python (>= 0.0.0)
+  seven_zip (3.0.0)
+    windows (>= 0.0.0)
+  sf_chart_data_loader (0.1.0)
+    aws_keys (>= 0.0.0)
+  shared_rax_hosts (0.2.0)
+    sprout_python (>= 0.0.0)
+  small_thumbs (0.4.4)
+    sprout_java (>= 0.0.0)
+  smokeping (3.1.0)
+    apache2 (>= 0.0.0)
+    perl (>= 0.0.0)
+  smoketcp (0.1.3)
+  sorting_hat (1.0.5)
+    aws_keys (>= 0.0.0)
+    sprout_python (>= 0.0.0)
+  sprout_access (1.0.5)
+    sudo (>= 0.0.0)
+  sprout_airflow (1.0.21)
+    airflow (~> 1.2.1)
+    aws_keys (>= 0.0.0)
+    storage_commons_database_config (>= 0.0.0)
+  sprout_ambari (0.0.2)
+    apt (>= 0.0.0)
+  sprout_ambari_thrift (0.1.0)
+  sprout_apache (0.1.8)
+    sprout_collectd (>= 0.0.0)
+    sprout_nrpe (>= 0.0.0)
+  sprout_apt_block (0.2.1)
+  sprout_bind (0.1.8)
+    bind (>= 0.0.0)
+    sprout_collectd (>= 0.0.0)
+  sprout_cassandra (0.0.34)
+    cassandra-dse (>= 0.0.0)
+    monit (>= 0.0.0)
+    sprout_apt_block (>= 0.0.0)
+    sprout_collectd (>= 0.0.0)
+    sprout_filebeat (>= 0.0.0)
+    sprout_jmxterm (>= 0.0.0)
+    sprout_nsca (>= 0.0.0)
+  sprout_cassandra12 (1.6.23)
+    java (>= 0.0.0)
+    monit (>= 0.0.0)
+    sprout_cassandra (>= 0.0.0)
+    sprout_collectd (>= 0.0.0)
+    sprout_jmxterm (>= 0.0.0)
+    sprout_nsca (>= 0.0.0)
+  sprout_chef_handler (0.2.9)
+    chef-sentry-handler (>= 0.0.0)
+    chef_handler (>= 0.0.0)
+    logrotate (>= 0.0.0)
+    sprout_nrpe (>= 0.0.0)
+  sprout_codesearcher (0.1.1)
+    sprout_python (>= 0.0.0)
+  sprout_collectd (1.0.11)
+    collectd (>= 0.0.0)
+    sprout_repository (>= 0.0.0)
+    sprout_toolbox (>= 0.0.0)
+    sprout_yum (>= 0.0.0)
+  sprout_dc_migration (0.0.12)
+    sprout_python (>= 0.0.0)
+  sprout_delete_local_users (0.1.2)
+    users (>= 0.0.0)
+  sprout_docker (1.0.3)
+  sprout_email_generator (0.4.3)
+    logrotate (>= 0.0.0)
+    sprout_filebeat (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+  sprout_email_summaries (0.2.1)
+    sprout_cassandra (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+    storage_commons_database_config (>= 0.0.0)
+  sprout_etchosts (0.1.8)
+  sprout_executor (0.1.35)
+    aws_keys (>= 0.0.0)
+    sprout_etchosts (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+    sprout_mysql (>= 0.0.0)
+    storage_commons_database_config (>= 0.0.0)
+  sprout_executor_sans_hadoop (0.1.1)
+    aws_keys (>= 0.0.0)
+    sprout_etchosts (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+    sprout_mysql (>= 0.0.0)
+    storage_commons_database_config (>= 0.0.0)
+  sprout_fail2ban (0.1.25)
+    fail2ban (>= 0.0.0)
+  sprout_fb_ratelimit (0.1.4)
+  sprout_fb_realtime (0.1.2)
+    java (>= 0.0.0)
+  sprout_filebeat (0.1.6)
+    filebeat (>= 0.0.0)
+    sprout_repository (>= 0.0.0)
+  sprout_fluentd (0.1.1)
+    td-agent (>= 0.0.0)
+  sprout_fstab (0.1.0)
+  sprout_gearman (1.0.1)
+    apache2 (>= 0.0.0)
+    build-essential (>= 0.0.0)
+  sprout_go (1.0.0)
+  sprout_graphite (1.0.13)
+    apache2 (>= 0.0.0)
+    poise-python (>= 0.0.0)
+    statsd (>= 0.0.0)
+  sprout_hastebin (0.1.4)
+    apache2 (>= 0.0.0)
+  sprout_hbase (0.0.4)
+  sprout_hdfs (0.1.0)
+  sprout_heartbeater_cron (0.1.0)
+    logrotate (>= 0.0.0)
+  sprout_hostsfile (0.1.1)
+    hostsfile (>= 0.0.0)
+  sprout_ideal_send_time_generator (0.1.7)
+    sprout_java (>= 0.0.0)
+    storage_commons_database_config (>= 0.0.0)
+  sprout_inbox_partition (0.0.3)
+    sprout_python (>= 0.0.0)
+  sprout_influxdb (0.2.2)
+    cloud_backup (>= 0.0.0)
+  sprout_intercom_integration (0.1.3)
+    sprout_java (>= 0.0.0)
+  sprout_ixgbevf (0.1.2)
+    apt (>= 0.0.0)
+  sprout_java (0.7.9)
+    java (>= 0.0.0)
+    maven (>= 0.0.0)
+    sprout_collectd (>= 0.0.0)
+    sprout_filebeat (>= 0.0.0)
+  sprout_jdk_mirror (0.1.4)
+    sprout_apache (>= 0.0.0)
+  sprout_jenkins (0.5.28)
+    apache2 (>= 0.0.0)
+    jenkins (>= 0.0.0)
+    percona (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+    sprout_python (>= 0.0.0)
+    sprout_repository (>= 0.0.0)
+  sprout_jmxterm (0.1.0)
+  sprout_log (0.8.4)
+    cron (>= 0.0.0)
+    monit (>= 0.0.0)
+    sprout_filebeat (>= 0.0.0)
+    sprout_python (>= 0.0.0)
+    sprout_repository (>= 0.0.0)
+    yum (>= 0.0.0)
+  sprout_log4j_cleanup_compress (0.2.4)
+  sprout_logstash (1.0.9)
+    aws_keys (>= 0.0.0)
+    logrotate (>= 0.0.0)
+    logstash (>= 0.0.0)
+    poise-python (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+  sprout_mailutils (0.1.1)
+  sprout_maxscale (0.1.22)
+    maxscale (>= 0.0.0)
+    sprout_collectd (>= 0.0.0)
+    sprout_mysql (>= 0.0.0)
+    sprout_nrpe (>= 0.0.0)
+    sprout_python (>= 0.0.0)
+    sprout_repository (>= 0.0.0)
+  sprout_memcached (0.1.1)
+    memcached (>= 0.0.0)
+  sprout_mysql (1.1.11)
+    apache2 (>= 0.0.0)
+    build-essential (>= 0.0.0)
+    mysql_orchestrator-agent (>= 0.0.0)
+    percona (>= 0.0.0)
+    sprout_apt_block (>= 0.0.0)
+    sprout_collectd (>= 0.0.0)
+    sprout_filebeat (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+    sprout_log (>= 0.0.0)
+    sprout_nrpe (>= 0.0.0)
+  sprout_mysql_haproxy (0.1.3)
+    logrotate (>= 0.0.0)
+    nrpe (>= 0.0.0)
+    sprout_collectd (>= 0.0.0)
+    sprout_repository (>= 0.0.0)
+    sysctl (>= 0.0.0)
+    ulimit (>= 0.0.0)
+  sprout_nagios (0.5.26)
+    apache2 (>= 0.0.0)
+    percona (>= 0.0.0)
+    sprout_nsca (>= 0.0.0)
+    sprout_python (>= 0.0.0)
+  sprout_newrelic (0.3.9)
+    newrelic (>= 0.0.0)
+  sprout_nexus (1.0.12)
+    duply (>= 0.0.0)
+    install_apache (>= 0.0.0)
+    nexus (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+    sprout_s3_backup (>= 0.0.0)
+  sprout_nexus_apt (0.1.6)
+  sprout_nginx_fb_ratelimit (0.1.5)
+  sprout_nodejs (0.1.7)
+    nodejs (>= 0.0.0)
+  sprout_nrpe (0.1.67)
+    nrpe (>= 0.0.0)
+    poise-python (>= 0.0.0)
+    python (>= 0.0.0)
+    sprout_pyrax (>= 0.0.0)
+    sprout_repository (>= 0.0.0)
+    sudo (>= 0.0.0)
+  sprout_nsca (0.1.14)
+    sprout_repository (>= 0.0.0)
+  sprout_nsq (0.2.3)
+    apt (>= 0.0.0)
+    nginx (>= 0.0.0)
+    nsq (>= 0.0.0)
+    sprout_log (>= 0.0.0)
+    sprout_repository (>= 0.0.0)
+    sprout_toolbox (>= 0.0.0)
+  sprout_openldap (1.1.17)
+    openldap (>= 0.0.0)
+    openssl (>= 0.0.0)
+  sprout_openvpn (0.1.8)
+    iptables (>= 0.0.0)
+    sprout_fail2ban (>= 0.0.0)
+    sprout_openldap (>= 0.0.0)
+    sysctl (>= 0.0.0)
+  sprout_papyrus (0.3.2)
+    aws_keys (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+  sprout_postfix (0.1.0)
+  sprout_psacct (0.1.1)
+  sprout_publisher (0.4.67)
+    bus (>= 0.0.0)
+    delayed_evaluator (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+    storage_commons_database_config (>= 0.0.0)
+  sprout_pyenv (0.1.1)
+    pyenv (>= 0.0.0)
+  sprout_pypi_server (0.1.1)
+    install_python (>= 0.0.0)
+    sprout_python (>= 0.0.0)
+    sprout_s3_backup (>= 0.0.0)
+  sprout_pyrax (0.1.6)
+    poise-python (>= 0.0.0)
+  sprout_python (0.2.5)
+    poise-python (>= 0.0.0)
+    sprout_repository (>= 0.0.0)
+  sprout_redis (0.1.6)
+    redisio (>= 0.0.0)
+    sprout_collectd (>= 0.0.0)
+  sprout_repository (0.1.13)
+    apt (>= 0.0.0)
+  sprout_s3_backup (0.8.17)
+    python (>= 0.0.0)
+    sprout_nsca (>= 0.0.0)
+    sprout_python (>= 0.0.0)
+  sprout_salesforce_integration (0.1.0)
+    sprout_java (>= 0.0.0)
+  sprout_scheduler (0.1.10)
+    aws_keys (>= 0.0.0)
+    delayed_evaluator (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+    storage_commons_database_config (>= 0.0.0)
+  sprout_selenium (0.0.4)
+    docker (>= 0.0.0)
+  sprout_smokeping (0.1.4)
+    smokeping (>= 0.0.0)
+    sprout_postfix (>= 0.0.0)
+  sprout_stage_appfcgi (0.1.0)
+    app_fastcgi (>= 0.0.0)
+  sprout_stageapi (0.1.5)
+    aws_keys (>= 0.0.0)
+  sprout_storage (0.1.3)
+    lvm (>= 0.0.0)
+  sprout_storm (0.1.9)
+    sprout_java (>= 0.0.0)
+    storm (>= 0.0.0)
+  sprout_storm-worker (0.1.2)
+    aws_keys (>= 0.0.0)
+  sprout_sudo (0.1.0)
+    sudo (>= 0.0.0)
+  sprout_support_loginas (0.1.26)
+    apache2 (>= 0.0.0)
+    sprout_apache (>= 0.0.0)
+    sprout_testdev (>= 0.0.0)
+  sprout_swap (0.1.2)
+    swap (>= 0.0.0)
+  sprout_syslog (0.3.5)
+    cron (>= 0.0.0)
+    rsyslog (>= 0.0.0)
+    sprout_repository (>= 0.0.0)
+  sprout_sysstat (0.1.4)
+  sprout_test (0.1.1)
+  sprout_testdev (2.0.6)
+    apache2 (>= 0.0.0)
+    app_fastcgi (>= 0.0.0)
+    sprout_repository (>= 0.0.0)
+  sprout_threatstack (0.1.13)
+    monit (>= 0.0.0)
+    sprout_collectd (>= 0.0.0)
+    threatstack (>= 0.0.0)
+  sprout_toolbox (0.3.13)
+  sprout_ulimit (0.2.1)
+    ulimit (>= 0.0.0)
+  sprout_users (0.1.3)
+    users (>= 0.0.0)
+  sprout_users_old (0.1.5)
+    users (>= 0.0.0)
+  sprout_vault (0.6.0)
+    cloud_backup (>= 0.0.0)
+    sprout_filebeat (>= 0.0.0)
+  sprout_whoisonsupportthisweek (0.1.27)
+    sprout_python (>= 0.0.0)
+  sprout_yum (0.1.7)
+    sprout_toolbox (>= 0.0.0)
+    yum (>= 0.0.0)
+    yum-ius (>= 0.0.0)
+  sprout_zookeeper (0.3.1)
+    exhibitor (>= 0.0.0)
+    logrotate (>= 0.0.0)
+    sprout_collectd (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+    zookeeper (>= 0.0.0)
+  sproutqueue (0.3.7)
+    delayed_evaluator (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+    sprout_nexus_apt (>= 0.0.0)
+    storage_commons_database_config (>= 0.0.0)
+  sproutsocial (0.1.1)
+  sproutsocial-com-site (0.2.3)
+    apache2 (>= 0.0.0)
+    sprout_newrelic (>= 0.0.0)
+  ssh_known_hosts (2.0.0)
+    partial_search (>= 0.0.0)
+  sshd-config (1.1.5)
+    cron (>= 0.0.0)
+  stage-web (0.9.14)
+    app_fastcgi (>= 0.0.0)
+    sprout_repository (>= 0.0.0)
+    ssh_known_hosts (>= 0.0.0)
+  statsd (1.1.12)
+    git (>= 0.0.0)
+    nodejs (>= 0.0.0)
+    runit (>= 0.0.0)
+  storage_commons_database_config (0.1.3)
+  stork (0.1.20)
+    delayed_evaluator (>= 0.0.0)
+    s3_file (>= 0.0.0)
+    sprout_cassandra (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+    storage_commons_database_config (>= 0.0.0)
+  storm (0.1.25)
+    build-essential (>= 0.0.0)
+    java (>= 0.0.0)
+    poise-python (>= 0.0.0)
+    zeromq (>= 0.0.0)
+  sudo (2.6.0)
+  suggested_reply (0.1.5)
+    sprout_java (>= 0.0.0)
+    storage_commons_database_config (>= 0.0.0)
+  suggestions-synchronizer (0.0.5)
+    bus (>= 0.0.0)
+    sprout_cassandra (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+    storage_commons_database_config (>= 0.0.0)
+  support-webhooks (1.0.1)
+    logrotate (>= 0.0.0)
+  support_salvo (0.1.5)
+    apt (>= 0.0.0)
+    aws_keys (>= 0.0.0)
+  swagger (0.1.1)
+    apache2 (>= 0.0.0)
+    build-essential (>= 0.0.0)
+    git (>= 0.0.0)
+    nodejs (>= 0.0.0)
+  swap (0.3.8)
+  syndicated_feed_poster (0.1.1)
+    sprout_filebeat (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+    storage_commons_database_config (>= 0.0.0)
+  sysctl (1.0.5)
+    ohai (>= 5.0)
+  systemd (2.1.3)
+  syzr (0.0.27)
+    nginx (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+  tagger (0.1.9)
+    bus (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+  td-agent (2.3.0)
+    apt (>= 0.0.0)
+    yum (>= 0.0.0)
+  threatstack (1.7.3)
+    apt (>= 0.0.0)
+    yum (>= 0.0.0)
+  thyme-machine (0.1.3)
+    bus (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+    storage_commons_database_config (>= 0.0.0)
+  timezone-ii (0.2.0)
+  tokenservice (1.0.0)
+    bus (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+    storage_commons_database_config (>= 0.0.0)
+  trendstagger (0.2.3)
+    sprout_java (>= 0.0.0)
+  tweet_stat (0.1.10)
+    bus (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+    sprout_redis (>= 0.0.0)
+    storage_commons_database_config (>= 0.0.0)
+  twitter-comparison-reports (0.1.5)
+    bus (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+    storage_commons_database_config (>= 0.0.0)
+  twitter-delete-tracker (0.1.3)
+    bus (>= 0.0.0)
+    sprout_cassandra (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+  twitter-demographics (0.2.1)
+    bus (>= 0.0.0)
+    sprout_cassandra (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+    storage_commons_database_config (>= 0.0.0)
+  twitter-events (0.3.8)
+    bus (>= 0.0.0)
+    nginx (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+    storage_commons_database_config (>= 0.0.0)
+  twitter-feedback-poller (0.0.3)
+    sprout_java (>= 0.0.0)
+    storage_commons_database_config (>= 0.0.0)
+  twitter-follower-service (0.0.2)
+    bus (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+    storage_commons_database_config (>= 0.0.0)
+  twitter-message-processor (0.1.2)
+    bus (>= 0.0.0)
+    sprout_filebeat (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+    storage_commons_database_config (>= 0.0.0)
+  twitter-platform (0.5.4)
+    bus (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+    storage_commons_database_config (>= 0.0.0)
+  twitter_engagement (0.2.17)
+    sprout_java (>= 0.0.0)
+    storage_commons_database_config (>= 0.0.0)
+  twitter_realtime_chat (0.0.3)
+    bus (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+  twitter_tailer (0.1.1)
+    bus (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+    storage_commons_database_config (>= 0.0.0)
+  ulimit (0.3.3)
+  user-timings (0.3.3)
+    bus (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+  users (5.3.1)
+  vim (1.0.3)
+  vpnusers (0.1.4)
+    apache2 (>= 0.0.0)
+  websocket_bridge (0.0.8)
+    bus (>= 0.0.0)
+    sprout_java (>= 0.0.0)
+  windows (4.3.3)
+  xml (3.1.2)
+    build-essential (>= 0.0.0)
+  yum (5.1.0)
+  yum-epel (3.1.0)
+  yum-ius (3.0.0)
+    yum-epel (>= 0.0.0)
+  yum-plugin-versionlock (0.2.1)
+  zabbix_ng (1.1.0)
+    apt (>= 0.0.0)
+    sudo (>= 0.0.0)
+  zeromq (1.1.0)
+    apt (>= 0.0.0)
+    build-essential (>= 0.0.0)
+    git (>= 0.0.0)
+    yum (>= 0.0.0)
+  zookeeper (4.1.1)
+    apt (>= 0.0.0)
+    build-essential (>= 2.0.2)
+    java (>= 0.0.0)
+    magic (~> 1.1)
+    runit (>= 0.0.0)
+  zypper (0.4.0)

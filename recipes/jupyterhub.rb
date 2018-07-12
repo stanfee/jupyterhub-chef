@@ -1,8 +1,10 @@
 #
-# Cookbook:: jupyterhub-chef
+# Cookbook:: jupyterhub
 # Recipe:: jupyterhub
 #
-# Copyright:: 2018, The Authors, All Rights Reserved.
+# Copyright 2018, Sprout Social
+#
+# All rights reserved - Do Not Redistribute
 
 # install jupyterhub
 include_recipe "#{cookbook_name}::jupyterhub_install"

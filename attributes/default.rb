@@ -1,11 +1,13 @@
 # node attributes
-default['nodejs']['version'] = '6.x'
-default['nodejs']['npms'] = []
+default['nodejs']['version'] = '6.4.0'
+default['nodejs']['npm'] = '3.10.3'
+default['nodejs']['src_url'] = 'https://nodejs.org/dist/v6.4.0'
+default['nodejs']['checksum'] = 'a58c930618cf5b0862aa329a626e850519036acfcd746983010c9946df1797d0'
 default['nodejs']['global_npms'] = ['npm', 'configurable-http-proxy']
 
 # python attributes
 default['python']['python2']['install'] = true
-default['python']['python2']['package'] = 'python-devel'
+default['python']['python2']['package'] = 'python-dev'
 default['python']['python2']['pips'] = ['pip', 'setuptools', 'wheel', 'virtualenv', 'jupyter', 'py4j', 'ipyparallel']
 default['python']['python2']['ipykernel']['install'] = false
 default['python']['python2']['ipykernel']['python_version'] = 'python2'
@@ -13,7 +15,7 @@ default['python']['python2']['ipykernel']['kernel_name'] = 'python2'
 default['python']['python2']['ipykernel']['kernel_displayname'] = 'Python 2'
 default['python']['python2']['ipykernel']['pips'] = ['ipykernel']
 default['python']['python3']['install'] = true
-default['python']['python3']['package'] = 'python34-devel'
+default['python']['python3']['package'] = 'python3.5-dev'
 default['python']['python3']['pips'] = ['pip', 'setuptools', 'wheel', 'virtualenv', 'jupyter', 'py4j', 'ipyparallel']
 default['python']['python3']['ipykernel']['install'] = false
 default['python']['python3']['ipykernel']['python_version'] = 'python3'
@@ -64,23 +66,10 @@ default['jupyterhub']['config']['jupyterhub_config']['JupyterHub.proxy_api_port'
 default['jupyterhub']['config']['jupyterhub_config']['JupyterHub.ssl_cert'] = '/etc/ssl/certs/jupyterhub.crt'
 default['jupyterhub']['config']['jupyterhub_config']['JupyterHub.ssl_key'] = '/etc/ssl/private/jupyterhub.key'
 default['jupyterhub']['config']['jupyterhub_config']['Authenticator.whitelist'] = []
-default['jupyterhub']['config']['jupyterhub_config']['Authenticator.admin_users'] = []
+default['jupyterhub']['config']['jupyterhub_config']['Authenticator.admin_users'] = ['stan']
 default['jupyterhub']['config']['jupyterhub_config']['JupyterHub.authenticator_class'] = 'jupyterhub.auth.PAMAuthenticator'
-default['jupyterhub']['config']['jupyterhub_config']['JupyterHub.authenticator_ldap_class'] = 'ldapauthenticator.LDAPAuthenticator'
-default['jupyterhub']['config']['jupyterhub_config']['LDAPAuthenticator.server_hosts'] = ['ldap://ldapserver-1.example.com:389', 'ldap://ldapserver-2.example.com:389']
-default['jupyterhub']['config']['jupyterhub_config']['LDAPAuthenticator.bind_user_dn'] = 'uid=ldapquery,cn=users,cn=accounts,dc=example,dc=com'
-default['jupyterhub']['config']['jupyterhub_config']['LDAPAuthenticator.bind_user_password'] = 'password'
-default['jupyterhub']['config']['jupyterhub_config']['LDAPAuthenticator.user_search_base'] = 'cn=users,cn=accounts,dc=example,dc=com'
-default['jupyterhub']['config']['jupyterhub_config']['LDAPAuthenticator.user_search_filter'] = '(&(objectClass=person)(uid={username}))'
-default['jupyterhub']['config']['jupyterhub_config']['LDAPAuthenticator.user_membership_attribute'] = 'memberOf'
-default['jupyterhub']['config']['jupyterhub_config']['LDAPAuthenticator.group_search_base'] = 'cn=groups,cn=accounts,dc=example,dc=com'
-default['jupyterhub']['config']['jupyterhub_config']['LDAPAuthenticator.group_search_filter'] = '(&(objectClass=ipausergroup)(memberOf={group}))'
-default['jupyterhub']['config']['jupyterhub_config']['LDAPAuthenticator.allowed_groups'] = ['cn=jupyterhub-users,cn=groups,cn=accounts,dc=example,dc=com']
-default['jupyterhub']['config']['jupyterhub_config']['LDAPAuthenticator.allow_nested_groups'] = 'True'
-default['jupyterhub']['config']['jupyterhub_config']['LDAPAuthenticator.create_user_home_dir'] = 'True'
-default['jupyterhub']['config']['jupyterhub_config']['LDAPAuthenticator.create_user_home_dir_cmd'] = ['mkhomedir_helper']
 default['jupyterhub']['config']['jupyterhub_config']['Spawner.cmd'] = 'jupyterhub-singleuser'
-default['jupyterhub']['config']['jupyterhub_config']['Spawner.notebook_dir'] = '~/jupyterhub'
+default['jupyterhub']['config']['jupyterhub_config']['Spawner.notebook_dir'] = '~/'
 default['jupyterhub']['kernels']['python2']['type'] = 'python'
 default['jupyterhub']['kernels']['python2']['install'] = true
 default['jupyterhub']['kernels']['python2']['python_version'] = 'python2'
