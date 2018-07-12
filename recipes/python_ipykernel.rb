@@ -1,8 +1,11 @@
 #
-# Cookbook Name:: jupyterhub-chef
+# Cookbook Name:: jupyterhub
 # Recipe:: python_ipykernel
 #
-# Copyright (c) 2017 The Authors, All Rights Reserved.
+# Copyright 2018, Sprout Social
+#
+# All rights reserved - Do Not Redistribute
+
 
 # create python python2 ipykernel kernel
 if node['python']['python2']['ipykernel']['install']

@@ -1,11 +1,11 @@
 # # encoding: utf-8
 
-# Inspec test for recipe jupyterhub-chef::jupyterhub_service
+# Inspec test for recipe jupyterhub::jupyterhub_service
 
 # The Inspec reference, with examples and extensive documentation, can be
 # found at https://docs.chef.io/inspec_reference.html
 
-control 'jupyterhub-chef::jupyterhub_service' do
+control 'jupyterhub::jupyterhub_service' do
   title 'Testing jupyterhub service'
 
   describe service('jupyterhub') do

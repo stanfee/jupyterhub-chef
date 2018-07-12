@@ -1,8 +1,10 @@
 #
-# Cookbook Name:: jupyterhub-chef
+# Cookbook Name:: jupyterhub
 # Recipe:: jupyterhub_install
 #
-# Copyright (c) 2016 The Authors, All Rights Reserved.
+# Copyright 2018, Sprout Social
+#
+# All rights reserved - Do Not Redistribute
 
 if node['jupyterhub']['config']['run_as'] != 'root'
   # create jupyterhub group

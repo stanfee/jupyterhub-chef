@@ -4,10 +4,6 @@ driver:
 
 provisioner:
   name: chef_zero
-  product_name: chef
-  product_version: latest
-  channel: stable
-  install_strategy: once
   always_update_cookbooks: true
   #log_level: info
 
@@ -15,25 +11,23 @@ verifier:
   name: inspec
 
 platforms:
-  - name: centos-7.5
+  - name: ubuntu-16.04
 
 suites:
   - name: default
     driver:
       vm_hostname: jupyterhub
       customize:
-        memory: 4096
-        cpuexecutioncap: 50
         natdnshostresolver1: "on"
       network:
         - ["forwarded_port", {guest: 8000, host: 8000, auto_correct: true}]  # jupyterhub http
         - ["forwarded_port", {guest: 8443, host: 8443, auto_correct: true}]  # jupyterhub https
         - ["forwarded_port", {guest: 8081, host: 8081, auto_correct: true}]  # jupyterhub rest api
     run_list:
-      - recipe[jupyterhub-chef::python]
-      - recipe[jupyterhub-chef::nodejs]
-      - recipe[jupyterhub-chef::anaconda]
-      - recipe[jupyterhub-chef::jupyterhub]
+      - recipe[jupyterhub::python]
+      - recipe[jupyterhub::nodejs]
+      - recipe[jupyterhub::anaconda]
+      - recipe[jupyterhub::jupyterhub]
     verifier:
       inspec_tests:
         - test/integration/default

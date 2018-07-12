@@ -1,11 +1,20 @@
 #
-# Cookbook Name:: jupyterhub-chef
+# Cookbook Name:: jupyterhub
 # Recipe:: python
 #
-# Copyright (c) 2016 The Authors, All Rights Reserved.
+# Copyright 2018, Sprout Social
+#
+# All rights reserved - Do Not Redistribute
+
+# Get latest apt-get
+u = execute 'apt-get update' do
+  command 'apt-get update'
+  ignore_failure true
+end
+u.run_action(:run)
 
 # include package(s)
-package ['curl', 'epel-release']
+package ['curl', 'yum']
 
 # include build essentials
 build_essential 'install_build_essential' do

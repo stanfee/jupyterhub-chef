@@ -1,11 +1,11 @@
 # # encoding: utf-8
 
-# Inspec test for recipe jupyterhub-chef::jupyterhub_install
+# Inspec test for recipe jupyterhub::jupyterhub_install
 
 # The Inspec reference, with examples and extensive documentation, can be
 # found at https://docs.chef.io/inspec_reference.html
 
-control 'jupyterhub-chef::jupyterhub_install' do
+control 'jupyterhub::jupyterhub_install' do
   title 'Testing jupyterhub installation'
 
   describe file('/opt/jupyterhub') do

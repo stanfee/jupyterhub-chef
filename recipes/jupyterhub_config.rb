@@ -1,8 +1,10 @@
 
-# Cookbook Name:: jupyterhub-chef
+# Cookbook Name:: jupyterhub
 # Recipe:: jupyterhub_config
 #
-# Copyright (c) 2016 The Authors, All Rights Reserved.
+# Copyright 2018, Sprout Social
+#
+# All rights reserved - Do Not Redistribute
 
 # include package(s)
 package ['openssl']

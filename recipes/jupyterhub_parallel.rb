@@ -1,8 +1,10 @@
 #
-# Cookbook Name:: jupyterhub-chef
+# Cookbook Name:: jupyterhub
 # Recipe:: jupyterhub_parallel
 #
-# Copyright (c) 2017 The Authors, All Rights Reserved.
+# Copyright 2018, Sprout Social
+#
+# All rights reserved - Do Not Redistribute
 
 # enable ipython clusters tab in jupyterhub
 if node['jupyterhub']['config']['allow_parallel_computing']

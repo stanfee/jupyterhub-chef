@@ -1,11 +1,11 @@
 # # encoding: utf-8
 
-# Inspec test for recipe jupyterhub-chef::anaconda_install
+# Inspec test for recipe jupyterhub::anaconda_install
 
 # The Inspec reference, with examples and extensive documentation, can be
 # found at https://docs.chef.io/inspec_reference.html
 
-control 'jupyterhub-chef::anaconda_install' do
+control 'jupyterhub::anaconda_install' do
   title 'Testing anaconda installation'
 
   describe file('/opt/anaconda') do

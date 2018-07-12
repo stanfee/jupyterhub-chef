@@ -1,11 +1,11 @@
 # # encoding: utf-8
 
-# Inspec test for recipe jupyterhub-chef::python
+# Inspec test for recipe jupyterhub::python
 
 # The Inspec reference, with examples and extensive documentation, can be
 # found at https://docs.chef.io/inspec_reference.html
 
-control 'jupyterhub-chef::python' do
+control 'jupyterhub::python' do
   title 'Testing python installation'
 
   describe package('python-devel') do
